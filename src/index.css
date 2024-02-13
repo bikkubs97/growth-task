@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color:  hsl(0, 0%, 98%);
+}
+
+.company{
+  animation: fadeDown 0.3s ease forwards;
+}
+
+.features{
+  animation: fadeDown 0.3s ease forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    top: -2px;
+  }
+  100% {
+    opacity: 1;
+  
+  }
+}
+ 
+ 
