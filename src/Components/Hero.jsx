@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="md:mx-28 md:flex">
-      <img src="./images/image-hero-mobile.png" className="md:hidden"/>
+      <img src="./images/image-hero-mobile.png" className="md:hidden" />
       <div className="md:ml-24 text-center md:text-left">
         <h1 className="font-extrabold text-6xl mt-24">
           Make
@@ -18,13 +18,28 @@ export default function Hero() {
           Learn More
         </button>
         <div className="flex gap-6 mt-24 md:pr-36 justify-center md:justify-normal mb-24 md:mb-0">
-          <img src="./images/client-databiz.svg " className="h-5 hover:animate-pulse hover:cursor-pointer" />
-          <img src="./images/client-audiophile.svg" className="h-5 hover:animate-pulse hover:cursor-pointer"/>
-          <img src="./images/client-meet.svg"className="h-5 hover:animate-pulse hover:cursor-pointer" />
-          <img src="./images/client-maker.svg"className="h-5 hover:animate-pulse hover:cursor-pointer" />
+          <img
+            src="./images/client-databiz.svg "
+            className="h-5 hover:animate-pulse hover:cursor-pointer"
+          />
+          <img
+            src="./images/client-audiophile.svg"
+            className="h-5 hover:animate-pulse hover:cursor-pointer"
+          />
+          <img
+            src="./images/client-meet.svg"
+            className="h-5 hover:animate-pulse hover:cursor-pointer"
+          />
+          <img
+            src="./images/client-maker.svg"
+            className="h-5 hover:animate-pulse hover:cursor-pointer"
+          />
         </div>
       </div>
-      <img src="./images/image-hero-desktop.png" className="w-[40%] md:block hidden" />
+      <img
+        src="./images/image-hero-desktop.png"
+        className="w-[40%] md:block hidden"
+      />
     </div>
   );
 }

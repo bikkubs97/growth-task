@@ -6,6 +6,7 @@ function App() {
     <>
       <Nav />
       <Hero />
+      {/*add more components here*/}
     </>
   );
 }

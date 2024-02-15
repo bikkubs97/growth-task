@@ -25,6 +25,7 @@ export default function Nav() {
           >
             <li className="m-2">Features</li>
             <div className="p-2">
+             {/*condionally render up or down arrow */}
               {featuresOpen ? (
                 <img
                   className="my-2 mr-2 hover:animate-bounce "
@@ -37,6 +38,7 @@ export default function Nav() {
                 />
               )}
             </div>
+           {/*conditionally render drop down */}
             {featuresOpen && (
               <div className="features absolute top-14 rounded-md bg-white p-4 h-40">
                 <ul className="hover:cursor-pointer">
@@ -83,6 +85,7 @@ export default function Nav() {
           >
             <li className="m-2">Company</li>
             <div className="py-2">
+              {/* condionally render up or down arrow */}
               {companyOpen ? (
                 <img
                   className="my-2 mr-2 hover:animate-bounce "
@@ -95,6 +98,7 @@ export default function Nav() {
                 />
               )}
             </div>
+           {/*  //conditionally render drop down */}
             {companyOpen && (
               <div className="company absolute top-14 hover:cursor-pointer  rounded-md bg-white p-4 ml-4 h-32">
                 <ul>
@@ -125,6 +129,7 @@ export default function Nav() {
           setShowSidebar(true);
         }}
       />
+      {/* show sidePanel if show sidebar is true */}
       {showSideBar && (
         <div className="sidebar md:hidden absolute right-0 top-0 h-full w-3/4 bg-white">
           <img
@@ -146,6 +151,7 @@ export default function Nav() {
             >
               <li className="m-2">Features</li>
               <div className="p-2">
+                {/* condionally render arrow */}
                 {featuresOpen ? (
                   <img
                     className="my-2 mr-2 hover:animate-bounce "
@@ -158,6 +164,7 @@ export default function Nav() {
                   />
                 )}
               </div>
+              {/* conditionally render sidePanel drop down */}
               {featuresOpen && (
                 <div className="features absolute top-24 left-34 rounded-md bg-white p-4 h-40 border">
                   <ul className="hover:cursor-pointer">
@@ -216,6 +223,7 @@ export default function Nav() {
                   />
                 )}
               </div>
+              {/* condionally render sidePanel drop down */}
               {companyOpen && (
                 <div className="company hover:cursor-pointer absolute top-36 left-4 rounded-md bg-white p-4 ml-4 h-32 border">
                   <ul>
